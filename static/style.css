@@ -1,0 +1,161 @@
+/* ---------- GLOBAL ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(120deg, #2c3e50, #3498db);
+    min-height: 100vh;
+}
+
+/* ---------- LOGIN CONTAINER ---------- */
+.container {
+    width: 400px;
+    max-width: 90%;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* ---------- IMAGE ---------- */
+.login-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* ---------- INPUT ---------- */
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* ---------- RESULT ---------- */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ---------- ERROR ---------- */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ---------- SPLIT LAYOUT (DESKTOP) ---------- */
+.split-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Image Section */
+.image-section {
+    flex: 1;
+    background-image: url("/static/eldercare1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Right Form Section */
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7fa;
+}
+
+/* Form Card */
+.form-box {
+    width: 380px;
+    max-width: 90%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media screen and (max-width: 768px) {
+
+    .split-container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        width: 100%;
+        height: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
