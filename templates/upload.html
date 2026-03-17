@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="split-container">
+
+    <!-- IMAGE SIDE -->
+    <div class="image-section"></div>
+
+    <!-- FORM SIDE -->
+    <div class="form-section">
+        <div class="form-box">
+
+            <h1>Fall Detection System</h1>
+
+            <form method="post" action="/detect-fall" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button type="submit">Detect Fall</button>
+            </form>
+
+            {% if result %}
+                <div class="result">{{ result }}</div>
+            {% endif %}
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
