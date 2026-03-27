@@ -1,11 +1,8 @@
-fastapi==0.110.0
-uvicorn==0.27.1
-ultralytics==8.0.196
-opencv-python-headless==4.9.0.80
-pillow==10.2.0
-numpy==1.26.4
-
-# CPU-only PyTorch (VERY IMPORTANT)
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
+fastapi
+uvicorn
+python-multipart
+pillow
+ultralytics
+opencv-python-headless
+torch
+torchvision
