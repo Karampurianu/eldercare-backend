@@ -6,7 +6,6 @@ numpy==1.26.4
 opencv-python-headless==4.9.0.80
 ultralytics==8.0.196
 
-# CPU ONLY TORCH (VERY IMPORTANT)
 torch==2.0.1+cpu
 torchvision==0.15.2+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
